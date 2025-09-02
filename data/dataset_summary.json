@@ -1,0 +1,31 @@
+{
+  "generation_date": "2025-09-02T20:29:24.792077",
+  "datasets": {
+    "credit_card_transactions": {
+      "records": 50000,
+      "fraud_rate": 0.00448,
+      "avg_transaction_amount": 580.0819074,
+      "date_range": "2024-10-26 to 2025-09-02"
+    },
+    "loan_applications": {
+      "records": 15000,
+      "approval_rate": 0.5472,
+      "default_rate": 0.12914230019493178,
+      "avg_loan_amount": 95075.98863333333
+    },
+    "bank_accounts": {
+      "records": 25000,
+      "suspicious_activity_rate": 0.0,
+      "avg_balance": 29390.20284
+    },
+    "customer_profiles": {
+      "records": 8000,
+      "avg_credit_score": 677.29725,
+      "avg_income": 40824.772125
+    },
+    "economic_indicators": {
+      "records": 72,
+      "date_range": "2019-01-31 to 2024-12-31"
+    }
+  }
+}

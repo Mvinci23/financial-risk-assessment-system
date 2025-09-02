@@ -1,0 +1,67 @@
+{
+  "fraud_detection": {
+    "best_model_file": "fraud_random_forest.pkl",
+    "scaler_file": "fraud_scaler.pkl",
+    "encoders_file": "fraud_encoders.pkl",
+    "features": [
+      "amount",
+      "log_amount",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "is_night",
+      "customer_age",
+      "customer_income",
+      "customer_credit_score",
+      "account_age_months",
+      "category_encoded",
+      "country_encoded",
+      "state_encoded",
+      "risk_profile_encoded",
+      "customer_avg_amount",
+      "customer_std_amount",
+      "customer_transaction_count",
+      "amount_deviation"
+    ],
+    "performance": {
+      "accuracy": 0.9961,
+      "precision": 1.0,
+      "recall": 0.13333333333333333,
+      "f1_score": 0.23529411764705882,
+      "auc": 0.8742150789664601,
+      "cv_auc_mean": 0.8281392824325259,
+      "cv_auc_std": 0.006197591133775924
+    }
+  },
+  "credit_risk": {
+    "best_model_file": "credit_gradient_boosting.pkl",
+    "scaler_file": "credit_scaler.pkl",
+    "encoders_file": "credit_encoders.pkl",
+    "features": [
+      "applicant_age",
+      "annual_income",
+      "credit_score",
+      "employment_years",
+      "debt_to_income_ratio",
+      "loan_amount",
+      "loan_term_months",
+      "interest_rate",
+      "loan_type_encoded",
+      "state_encoded",
+      "purpose_encoded",
+      "own_home",
+      "years_at_address",
+      "loan_to_income_ratio",
+      "payment_to_income_ratio"
+    ],
+    "performance": {
+      "accuracy": 0.8745432399512789,
+      "precision": 0.7142857142857143,
+      "recall": 0.04716981132075472,
+      "f1_score": 0.08849557522123894,
+      "auc": 0.6441582002902757,
+      "cv_auc_mean": 0.639909467806405,
+      "cv_auc_std": 0.010294487681199314
+    }
+  }
+}

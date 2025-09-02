@@ -1,0 +1,262 @@
+{
+  "training_date": "2025-09-02T20:47:32.482105",
+  "model_results": {
+    "fraud_detection": {
+      "results": {
+        "Random Forest": {
+          "accuracy": 0.9961,
+          "precision": 1.0,
+          "recall": 0.13333333333333333,
+          "f1_score": 0.23529411764705882,
+          "auc": 0.8742150789664601,
+          "cv_auc_mean": 0.8281392824325259,
+          "cv_auc_std": 0.006197591133775924
+        },
+        "Gradient Boosting": {
+          "accuracy": 0.995,
+          "precision": 0.4418604651162791,
+          "recall": 0.4222222222222222,
+          "f1_score": 0.4318181818181818,
+          "auc": 0.8492014063284781,
+          "cv_auc_mean": 0.8653292510665548,
+          "cv_auc_std": 0.026490376565853083
+        },
+        "Logistic Regression": {
+          "accuracy": 0.8775,
+          "precision": 0.027243589743589744,
+          "recall": 0.7555555555555555,
+          "f1_score": 0.05259087393658159,
+          "auc": 0.8587287237010994,
+          "cv_auc_mean": 0.8588741989362202,
+          "cv_auc_std": 0.010558902414850973
+        },
+        "SVM": {
+          "accuracy": 0.9858,
+          "precision": 0.10569105691056911,
+          "recall": 0.28888888888888886,
+          "f1_score": 0.15476190476190477,
+          "auc": 0.7906490317540041,
+          "cv_auc_mean": 0.8233978120745785,
+          "cv_auc_std": 0.02277382493865635
+        }
+      },
+      "best_model": "Random Forest",
+      "feature_names": [
+        "amount",
+        "log_amount",
+        "hour",
+        "day_of_week",
+        "is_weekend",
+        "is_night",
+        "customer_age",
+        "customer_income",
+        "customer_credit_score",
+        "account_age_months",
+        "category_encoded",
+        "country_encoded",
+        "state_encoded",
+        "risk_profile_encoded",
+        "customer_avg_amount",
+        "customer_std_amount",
+        "customer_transaction_count",
+        "amount_deviation"
+      ]
+    },
+    "credit_risk": {
+      "results": {
+        "Random Forest": {
+          "accuracy": 0.8714981729598051,
+          "precision": 0.6666666666666666,
+          "recall": 0.009433962264150943,
+          "f1_score": 0.018604651162790697,
+          "auc": 0.6113372476580025,
+          "cv_auc_mean": 0.612563350656647,
+          "cv_auc_std": 0.007641992647845754
+        },
+        "Gradient Boosting": {
+          "accuracy": 0.8745432399512789,
+          "precision": 0.7142857142857143,
+          "recall": 0.04716981132075472,
+          "f1_score": 0.08849557522123894,
+          "auc": 0.6441582002902757,
+          "cv_auc_mean": 0.639909467806405,
+          "cv_auc_std": 0.010294487681199314
+        },
+        "Logistic Regression": {
+          "accuracy": 0.5761266747868453,
+          "precision": 0.15428571428571428,
+          "recall": 0.5094339622641509,
+          "f1_score": 0.23684210526315788,
+          "auc": 0.5601266657870432,
+          "cv_auc_mean": 0.5794679349082946,
+          "cv_auc_std": 0.02235035726116411
+        },
+        "SVM": {
+          "accuracy": 0.6345919610231425,
+          "precision": 0.1678082191780822,
+          "recall": 0.46226415094339623,
+          "f1_score": 0.24623115577889448,
+          "auc": 0.5944649689932708,
+          "cv_auc_mean": 0.6032862530916941,
+          "cv_auc_std": 0.01704129755862892
+        }
+      },
+      "best_model": "Gradient Boosting",
+      "feature_names": [
+        "applicant_age",
+        "annual_income",
+        "credit_score",
+        "employment_years",
+        "debt_to_income_ratio",
+        "loan_amount",
+        "loan_term_months",
+        "interest_rate",
+        "loan_type_encoded",
+        "state_encoded",
+        "purpose_encoded",
+        "own_home",
+        "years_at_address",
+        "loan_to_income_ratio",
+        "payment_to_income_ratio"
+      ]
+    },
+    "feature_importance": {
+      "fraud_detection": [
+        [
+          "amount",
+          0.1445513713172576
+        ],
+        [
+          "log_amount",
+          0.12371265203566936
+        ],
+        [
+          "country_encoded",
+          0.1138632499725238
+        ],
+        [
+          "amount_deviation",
+          0.10665948534781831
+        ],
+        [
+          "state_encoded",
+          0.10017452087105592
+        ],
+        [
+          "customer_std_amount",
+          0.05961467945328347
+        ],
+        [
+          "customer_avg_amount",
+          0.05321721178917156
+        ],
+        [
+          "category_encoded",
+          0.0457129471867915
+        ],
+        [
+          "customer_income",
+          0.04320120352882281
+        ],
+        [
+          "customer_age",
+          0.04139001879493955
+        ],
+        [
+          "account_age_months",
+          0.037498088193501665
+        ],
+        [
+          "customer_credit_score",
+          0.03517332592955555
+        ],
+        [
+          "hour",
+          0.034790322538126216
+        ],
+        [
+          "customer_transaction_count",
+          0.02400002459052542
+        ],
+        [
+          "day_of_week",
+          0.0214791459323717
+        ],
+        [
+          "risk_profile_encoded",
+          0.006760750246627458
+        ],
+        [
+          "is_night",
+          0.005146933152057364
+        ],
+        [
+          "is_weekend",
+          0.0030540691199007442
+        ]
+      ],
+      "credit_risk": [
+        [
+          "credit_score",
+          0.1076272895771822
+        ],
+        [
+          "debt_to_income_ratio",
+          0.10481608193597115
+        ],
+        [
+          "loan_amount",
+          0.0888513408956368
+        ],
+        [
+          "annual_income",
+          0.08694485726806367
+        ],
+        [
+          "payment_to_income_ratio",
+          0.08642665142291954
+        ],
+        [
+          "loan_to_income_ratio",
+          0.08578169284044923
+        ],
+        [
+          "interest_rate",
+          0.08271986540118599
+        ],
+        [
+          "applicant_age",
+          0.0749620382042805
+        ],
+        [
+          "employment_years",
+          0.06317963062827568
+        ],
+        [
+          "state_encoded",
+          0.05142792201175112
+        ],
+        [
+          "years_at_address",
+          0.05055234240483024
+        ],
+        [
+          "purpose_encoded",
+          0.04251840356854796
+        ],
+        [
+          "loan_term_months",
+          0.0421993438649444
+        ],
+        [
+          "loan_type_encoded",
+          0.019245954172605793
+        ],
+        [
+          "own_home",
+          0.012746585803355732
+        ]
+      ]
+    }
+  }
+}

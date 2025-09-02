@@ -1,0 +1,35 @@
+# Financial Risk Assessment & Fraud Detection System - Requirements
+# Enterprise-grade financial risk management platform
+
+# Core Data Science Libraries
+pandas>=1.5.0              # Data manipulation and analysis
+numpy>=1.21.0              # Numerical computing and arrays
+matplotlib>=3.5.0          # Data visualization and plotting
+seaborn>=0.11.0            # Statistical data visualization
+
+# Machine Learning
+scikit-learn>=1.0.0        # Machine learning algorithms and tools
+scipy>=1.9.0               # Scientific computing library
+
+# Data Processing & Analysis
+python-dateutil>=2.8.0     # Date and time utilities
+openpyxl>=3.0.0           # Excel file processing (optional)
+
+# Model Persistence
+pickle-mixin>=1.0.0        # Enhanced pickle functionality (optional)
+
+# Development and Testing
+jupyter>=1.0.0             # Interactive development environment (optional)
+notebook>=6.0.0            # Jupyter notebook interface (optional)
+
+# Performance and Optimization
+numba>=0.56.0             # JIT compilation for performance (optional)
+
+# Note: This system is designed to work with minimal dependencies
+# Core functionality requires only: pandas, numpy, matplotlib, seaborn, scikit-learn
+# Optional packages enhance development experience and performance
+
+# Installation:
+# pip install pandas numpy matplotlib seaborn scikit-learn
+# or
+# pip install -r requirements.txt
